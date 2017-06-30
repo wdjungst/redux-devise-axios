@@ -1,0 +1,17 @@
+{
+  "name": "redux-devise-axios",
+  "version": "0.0.1",
+  "description": "Redux Middleware to help set axios headers when using Devise Token Auth",
+  "main": "./dist/index.js",
+  "author": "djungst",
+  "scripts": {
+    "build": "babel src --presets babel-preset-latest --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
