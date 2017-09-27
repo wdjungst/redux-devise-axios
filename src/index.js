@@ -19,7 +19,7 @@ const tokenMiddleware = args => store => next => action => {
           axios.defaults.headers.common[token] = headers[token];
           if (nativeApp) {
             try {
-              await AsyncStorage.setItem(token, headers[token])
+              AsyncStorage.setItem(token, headers[token])
             } catch (err) {
               console.log(err)
             }
