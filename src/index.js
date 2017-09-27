@@ -18,7 +18,6 @@ const tokenMiddleware = args => store => next => action => {
         HEADERS.forEach( token => {
           axios.defaults.headers.common[token] = headers[token];
             localStorage.setItem(token, headers[token])
-          }
         })
       }
     }
