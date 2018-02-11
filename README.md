@@ -132,3 +132,14 @@ This will work for React State as well as long as you dispatch some action with 
   }
   ```
   
+# Demo
+  ```
+    $ clone project
+    $ cd demo
+    $ bundle
+    $ bundle exec rake db:create db:migrate
+    $ rails s -p 3001
+    $ cd client (new tab / pane)
+    $ yarn or npm install
+    $ yarn start or npm start
+  ```
