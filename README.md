@@ -11,7 +11,7 @@ This package fits a very specific use case.  It's purpose is to keep help keep t
 
 store.js
 
-```
+```javascript
 import { createStore, compose, applyMiddleware } from 'redux';
 
 //This could be saga or promise or any other async middleware
@@ -56,7 +56,7 @@ NOTE: You are resposible for the implementation of LOGOUT and VALIDATE token.  T
 # Example Usage
 
 actions/auth.js
-```
+```javascript
 import axios from 'axios';
 import { setFlash } from '../actions/flash';
 
@@ -119,7 +119,7 @@ Notice that we are sending the headers when we dispatch.  This is key to how thi
 
 This will work for React State as well as long as you dispatch some action with the res.headers from axios.
 
-```
+```javascript
   componentDidMount() {
     axios.get('/api/bio')
       .then( res => {
